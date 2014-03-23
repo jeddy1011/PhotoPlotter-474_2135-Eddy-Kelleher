@@ -21,7 +21,7 @@ Usage
 Options
 ==================================
 
--p  Print info on image(s)/n
+-p  Print info on image(s)\n
 -m  Plot image(s) on HTML map
 -b  Both
 -l  Option 4
