@@ -1,30 +1,24 @@
 PhotoPlotter-474_2135-Eddy-Kelleher
-===================================
+
+pp.pl v1.0
+==========
 
 A tool to analyze photo(s) and print the location of them to STDOUT. It will also have an option to write the location of the photo(s) to an HTML file with links to the location on Google Maps.
 
+Usage:
+==========
 
-Install necessary modules via CPAN
-===================================
+pp.pl <options>
 
-- Image::ExifTool
-- Image::ExifTool:Location
-- HTML::QuickTable
-- Getopt::Long
-- Geo::Coordinates::DecimalDegrees
+Options:
+==========
 
+-h|help ........ Show help
+-f filename .... File(s) to extract location info from
+-m ............. Output location info to HTML file
 
-Usage
-==================================
+Examples: 
+==========
 
-- perl pp.pl <options> <image_file(s)>
-
-
-Options
-==================================
-
-- h|help  Show help
-
--f        File(s) to extract info on
-
--m        Output location info to HTML file
+pp.pl -f image.jpg
+pp.pl -f image.jpg -f /examples/RIT.jpg -html
