@@ -8,17 +8,20 @@ A tool to analyze photo(s) and print the location of them to STDOUT. It will als
 Usage:
 ==========
 
-pp.pl <options>
+-pp.pl <options>
 
 Options:
 ==========
 
 -h|help ........ Show help
+
 -f filename .... File(s) to extract location info from
+
 -m ............. Output location info to HTML file
 
 Examples: 
 ==========
 
-pp.pl -f image.jpg
-pp.pl -f image.jpg -f /examples/RIT.jpg -html
+-pp.pl -f image.jpg
+
+-pp.pl -f image.jpg -f /examples/RIT.jpg -html
