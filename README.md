@@ -1,32 +1,45 @@
 PhotoPlotter-474_2135-Eddy-Kelleher
-===================================
 
-This tool will recursively analyze photos in a directory, aggregate and display their metadata in an organized manner, and plot the location of all of the photos on Google Maps. Will most likely be written in Perl and use one of the various Google Maps modules for Perl.
+PhotoPlotter is distributed under the terms of the GNU General Public License.
 
-The program can be run from a terminal and pointed at one or multiple images.
+Copyright (C) 2014 John Kelleher, Joshua Eddy
+ 
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-Install necessary modules
-===================================
 
-- cpan
-- install Example::Module
+pp.pl v1.0
+==========
 
+A tool to analyze photo(s) and print the location of them to STDOUT. It will also have an option to write the location of the photo(s) to an HTML file with links to the location on Google Maps.
 
-Usage
-==================================
+Usage:
+==========
 
-- perl PhotoPlotter.pl <options> <image_file(s)>
+-pp.pl <options>
 
+Options:
+==========
 
-Options
-==================================
+-h|help ........ Show help
 
--p  Print info on image(s)
+-f filename .... File(s) to extract location info from
 
--m  Plot image(s) on HTML map
+-m ............. Output location info to HTML file
 
--b  Both
+Examples: 
+==========
 
--l  Option 4
+-pp.pl -f image.jpg
 
--f  Option 5
+-pp.pl -f image.jpg -f /examples/RIT.jpg -html
