@@ -5,11 +5,14 @@ This tool will recursively analyze photos in a directory, aggregate and display 
 
 The program can be run from a terminal and pointed at one or multiple images.
 
-Install necessary modules
+Install necessary modules via CPAN
 ===================================
 
-- cpan
-- install Example::Module
+- Image::ExifTool
+- Image::ExifTool:Location
+- HTML::QuickTable
+- Getopt::Long
+- Geo::Coordinates::DecimalDegrees
 
 
 Usage
